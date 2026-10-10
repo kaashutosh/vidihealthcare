@@ -1,0 +1,349 @@
+/* Certificate*/
+
+/* Section */
+.certificate-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Heading */
+.certificate-section h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+/* Grid */
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Certificate Item */
+.certificate-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image */
+.certificate-item img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover (optional) */
+.certificate-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Tablet */
+@media (max-width: 600px) {
+    .certificate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .certificate-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .certificate-item img {
+        max-width: 150px;
+    }
+
+    .certificate-section h2 {
+        font-size: 26px;
+    }
+}
+
+
+/*   reviewer Section    */
+/* Section */
+.review-section {
+    padding: 50px 20px;
+}
+
+.review-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Slider Layout */
+.slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    gap: 25px;
+    transition: transform 0.5s ease;
+}
+
+/* Card */
+.review-card {
+    flex: 0 0 calc(25% - 20px); /* 4 cards desktop */
+    background: #fff;
+    border-radius: 18px;
+    padding: 45px 20px 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Avatar */
+.avatar {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Stars */
+.stars {
+    color: #f5c518;
+    font-size: 18px;
+    margin: 20px 0 10px;
+}
+
+/* Text */
+.review-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+.name {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.verified {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Quote */
+.quote {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 50px;
+    opacity: 0.15;
+}
+
+/* Navigation */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev { left: -10px; }
+.next { right: -10px; }
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+    .review-card {
+        flex: 0 0 calc(50% - 15px); /* 2 cards mobile */
+    }
+}
+
+.ingredients-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.ingredients-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ingredient-card {
+    background: #f8f6ef;
+    padding: 20px 20px 30px;
+    border-radius: 18px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.card-title {
+    background: #4a2615;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.ingredient-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e7c06d;
+    margin-bottom: 18px;
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* TABLET (2 per row) */
+@media (max-width: 600px) {
+    .ingredients-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE (1 per row) */
+@media (max-width: 600px) {
+    .ingredients-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ingredient-card img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+
+/*  consumme the */
+.consume-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.consume-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.consume-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.consume-card {
+    border: 2px solid #4e2d1e;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.consume-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.consume-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #4e2d1e;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consume-info p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #2b2b2b;
+}
+@media (max-width: 600px) {
+    .consume-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .consume-card img {
+        height: 240px;
+    }
+}
+
+@media (max-width: 600px) {
+    .consume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .consume-card img {
+        height: 220px;
+    }
+
+    .consume-info {
+        flex-direction: row;
+    }
+}

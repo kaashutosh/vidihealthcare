@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <title>VIDI Health Care Pvt Ltd</title>
+</head>
+
+<body class="bg-white text-white">
+
+    <!-- HEADER -->
+    <header class="border-b border-[#556B2F] bg-[#556B2F]">
+
+        <div class="px-4 py-3 lg:px-10 lg:py-5">
+
+            <!-- DESKTOP ROW -->
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
+
+                <!-- MOBILE TOP ROW -->
+                <div class="flex items-center justify-between lg:hidden">
+
+                    <button id="mobileMenuBtn" class="text-xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="flex flex-col items-center">
+                        <img src="assets/images/logo2.jpg" class="w-12 h-12 rounded-full" alt="Logo">
+                        <span class="text-sm font-serif text-center mt-1">
+                            VIDI Health Care Pvt Ltd
+                        </span>
+                    </div>
+
+                    <button class="border px-3 py-1 rounded-full flex items-center space-x-1 text-sm">
+                        <i class="fa fa-user"></i>
+                    </button>
+                </div>
+
+                <!-- DESKTOP LOGO -->
+                <div class="hidden lg:flex flex-col items-center">
+                    <img src="assets/images/logo2.jpg" class="w-24 h-24 rounded-full" alt="Logo">
+                    <span class="text-xl font-serif mt-1">
+                        VIDI Health Care Pvt Ltd
+                    </span>
+                </div>
+
+                <!-- SEARCH CENTER -->
+                <div class="w-full lg:w-1/2">
+                    <div class="relative">
+                        <input type="text"
+                            class="w-full rounded-full px-10 py-3 text-black bg-white border border-white"
+                            placeholder="Search for...">
+                        <i class="fa fa-search absolute left-3 top-3.5 text-gray-400"></i>
+                    </div>
+                </div>
+
+                <!-- DESKTOP ACCOUNT -->
+                <div class="hidden lg:flex">
+                    <button class="border px-5 py-2 rounded-full flex items-center space-x-2">
+                        <i class="fa fa-user"></i>
+                        <span>Account</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <div class="bg-[#556B2F]">
+
+        <nav class="border-b border-[#5b2a1f]">
+
+            <ul class="hidden lg:flex justify-center space-x-10 py-4">
+
+                <li class="relative group pb-4">
+
+                    <a href="#" class="flex items-center space-x-1 hover:text-gray-300">
+                        <span>Diabetes Support</span>
+                        <i class="fa fa-chevron-down text-xs"></i>
+                    </a>
+
+                    <div class="absolute left-0 top-full w-full h-4"></div>
+
+                    <ul class="absolute left-0 top-full opacity-0 invisible
+           group-hover:opacity-100 group-hover:visible
+           bg-[#2e120c] mt-2 w-52 rounded-lg border border-[#5b2a1f]
+           z-50 py-2 transition duration-200">
+
+                        <li><a href="pages/diabutose-herbal-powder.html"
+                                class="block px-4 py-2 hover:bg-[#3d1a12]">Diabutose Powder</a></li>
+                        <li><a href="pages/gas_niwarak.html" class="block px-4 py-2 hover:bg-[#3d1a12]">gas_niwarak</a>
+                        </li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#3d1a12]">Ayurvedic Support</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="pages/stamina-x-powder.html" class="hover:text-gray-300">Stamina X Powder</a></li>
+                <li><a href="pages/gas_niwarak.html" class="hover:text-gray-300">Gas Niwarak</a></li>
+                <li><a href="pages/vviv-customer.html" class="hover:text-gray-300">VVIP Customer</a></li>
+
+            </ul>
+
+            <!-- MOBILE NAV -->
+            <div id="mobileNav" class="hidden lg:hidden bg-[#2e120c] px-4 pb-4 space-y-3">
+
+                <button id="diabetesBtn"
+                    class="w-full flex justify-between items-center py-2 border-b border-[#5b2a1f]">
+                    <span>Diabetes Support</span>
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+
+                <ul id="diabetesMenu" class="hidden pl-4 space-y-2">
+                    <li><a href="pages/diabutose-herbal-powder.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Diabutose
+                            Powder</a></li>
+                    <li><a href="pages/powder-pro.html"
+                            class="block px-4 py-2 hover:bg-[#3d1a12]">gas_niwarak</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-[#3d1a12]">Ayurvedic Support</a></li>
+                </ul>
+
+                <li><a href="pages/stamina-x-powder.html" class="hover:text-gray-300 block py-2">Stamina X Powder</a></li>
+                <li><a href="pages/powder-pro.html" class="hover:text-gray-300 block py-2">Karela-jamun Powder</a></li>
+                <li><a href="pages/vviv-customer.html" class="hover:text-gray-300 block py-2">VVIP Customer</a></li>
+
+            </div>
+
+        </nav>
+    </div>
+
+    <script>
+        document.getElementById('mobileMenuBtn').onclick = () =>
+            document.getElementById('mobileNav').classList.toggle('hidden');
+
+        document.getElementById('diabetesBtn').onclick = () =>
+            document.getElementById('diabetesMenu').classList.toggle('hidden');
+    </script>
+
+
+    <!-- HERO SECTION -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide-img" style="background-image:url('assets/images/abot.jpeg');"></div>
+            <div class="swiper-slide slide-img" style="background-image:url('assets/images/abot.jpeg');"></div>
+            <div class="swiper-slide slide-img" style="background-image:url('assets/images/abot.jpeg');"></div>
+            <div class="swiper-slide slide-img" style="background-image:url('assets/images/abot.jpeg');"></div>
+
+        </div>
+    </div>
+
+
+    <!--Certification-->
+
+    <section class="certificate-section">
+        <h2>Certificate of Natural Goodness</h2>
+
+        <div class="certificate-grid">
+            <div class="certificate-item">
+                <img src="assets/images/certificate/GMP.png" alt="Gluten Free Certificate">
+            </div>
+
+            <div class="certificate-item">
+                <img src="assets/images/certificate/ISO.png" alt="100% Pure Natural & Vegan">
+            </div>
+
+            <div class="certificate-item">
+                <img src="assets/images/certificate/MII.png" alt="Clinically Tested Ingredients">
+            </div>
+
+            <div class="certificate-item">
+                <img src="assets/images/certificate/NHC.png" alt="GMO Free Certificate">
+            </div>
+
+            <div class="certificate-item">
+                <img src="assets/images/certificate/AYUSH.jpeg" alt="GMO Free Certificate">
+            </div>
+        </div>
+    </section>
+
+
+    <!--   We found solution  -->
+    <div class="solutions-we-found">
+        <h2>We've Found Solutions That Actually<br>Make Sense.</h2>
+
+        <div class="grid1">
+            <div class="card1">
+                <img src="assets/images/diabetes.mec.jpg" alt="">
+                <p>DIABETIC CARE</p>
+            </div>
+            <div class="card1">
+                <img src="assets/images/men-health.png" alt="">
+                <p>MEN'S HEALTH</p>
+            </div>
+            <div class="card1">
+                <img src="assets/images/energy-bost.jpg" alt="">
+                <p>ENERGY BOOSTERS</p>
+            </div>
+            <div class="card1">
+                <img src="assets/images/digestive-helth.jpg" alt="">
+                <p>DIGESTIVE HEALTH</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--This is product-->
+
+    <section class="shop">
+        <h2 class="shop-title">Shop Now</h2>
+
+        <div class="product-grid">
+
+            <!-- Card 1 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <span class="badge">-35%</span>
+                    <img src="assets/images/madhu-vinashak.jpeg" alt="Madhu Vinashak">
+                </div>
+
+                <h3>MADHU VINASHAK</h3>
+
+                <p class="price">
+                    <span class="new">Rs. 1,699.00</span>
+                    <span class="old">Rs. 2,499.00</span>
+                </p>
+
+                <button class="cart-btn5"><a class="btn5" href="pages/madhu-vinashak.html">Add to
+                        cart</a></button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <span class="badge">-31%</span>
+                    <img src="assets/images/powder-pro.jpeg" alt="Powder Pro">
+                </div>
+
+                <h3>POWDER PRO</h3>
+
+                <p class="price">
+                    <span class="new">Rs. 1,499.00</span>
+                    <span class="old">Rs. 1,899.00</span>
+                </p>
+
+                <!--<button class="cart-btn"><a class="btn" href="pages/checkout.html?product=Karela & Jamun Powder&price=1800&img=/assets/images/kerela-Jammu_img.png">Add to cart</a></button>-->
+                <button class="cart-btn5"><a class="btn5" href="pages/powder-pro.html">Add to cart</a></button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <span class="badge">-15%</span>
+                    <img src="assets/images/diabetic-cure.jpeg" alt="Diabetic Cure">
+                </div>
+
+                <h3>DIABETIC CURE</h3>
+
+                <p class="price">
+                    <span class="new">Rs. 2,199.00</span>
+                    <span class="old">Rs. 2,499.00</span>
+                </p>
+
+                <!--<button class="cart-btn"><a class="btn" href="pages/checkout.html?product=Gas Nivarak Powder&price=1699&img=/assets/images/Gas_Nivarak_img.png">Add to cart</a></button>-->
+                <button class="cart-btn5"><a class="btn5" href="pages/diabetic-cure.html">Add to
+                        cart</a></button>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <span class="badge">-15%</span>
+                    <img src="assets/images/stamina-x-powder.jpeg" alt="Stamina X Powder">
+                </div>
+
+                <h3>STAMINA X POWDER</h3>
+
+                <p class="price">
+                    <span class="new">Rs. 2,500.00</span>
+                    <span class="old">Rs. 2,900.00</span>
+                </p>
+
+                <!--<button class="cart-btn"><a class="btn" href="pages/checkout.html?product=Stamina X Powder&price=1699&img=/assets/images/Urga_img.png">Add to cart</a></button>-->
+                <button class="cart-btn5"><a class="btn5" href="pages/stamina-x-powder.html">Add to
+                        cart</a></button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--      get expert help     -->
+    <div class="section">
+
+        <div class="right">
+            <img src="assets/images/consult.jpg" alt="Health Expert">
+        </div>
+
+        <div class="left">
+            <div class="tag">FREE CONSULTATION</div>
+            <h2>Get Expert Health Consultation</h2>
+            <p>Our certified health experts are here to provide personalized guidance for your wellness journey.</p>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">Ã¢Å“â€</div>
+                    <div>
+                        <div class="card-title">Expert Guidance</div>
+                        <div class="card-text">Personalized health recommendations.</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">Ã¢Å“â€</div>
+                    <div>
+                        <div class="card-title">Free Assessment</div>
+                        <div class="card-text">Comprehensive health evaluation.</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">Ã¢Å“â€</div>
+                    <div>
+                        <div class="card-title">Personalized Plan</div>
+                        <div class="card-text">Custom wellness strategy.</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">Ã¢Å“â€</div>
+                    <div>
+                        <div class="card-title">Ongoing Support</div>
+                        <div class="card-text">Continuous guidance for your journey.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <section class="review-section">
+        <h2 class="review-title">What Customers Say</h2>
+
+        <div class="slider-container">
+            <button class="nav prev">&#10094;</button>
+
+            <div class="slider" id="slider">
+
+                <!-- CARD (Repeat 12 times) -->
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="assets/images/vviv/VViVCust1.jpeg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦<b style="font-size: 20px;">Ã¢Ëœâ€¦</b>Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="assets/images/vviv/VViVCust2.jpeg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦<b style="font-size: 20px;">Ã¢Ëœâ€¦</b>Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="assets/images/vviv/VViVCust4.jpeg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦<b style="font-size: 20px;">Ã¢Ëœâ€¦</b>Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="assets/images/vviv/VViVCust4.jpeg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="images/user1.jpg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="images/user1.jpg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="images/user1.jpg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="images/user1.jpg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="images/user1.jpg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="images/user1.jpg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="images/user1.jpg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+                <div class="review-card">
+                    <div class="avatar">
+                        <img src="images/user1.jpg" alt="">
+                    </div>
+                    <div class="stars">Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦</div>
+                    <h3>Simple, natural, effective!</h3>
+                    <p>Main itne saare supplements try kar chuka hoon...</p>
+                    <span class="name">Aman Damani</span>
+                    <span class="verified">Verified Customer</span>
+                    <div class="quote">Ã¢â‚¬Â</div>
+                </div>
+
+                <!-- Duplicate cards (2Ã¢â‚¬â€œ12) -->
+                <!-- Just change image, name & text -->
+                <!-- Keep same structure -->
+
+            </div>
+
+            <button class="nav next">&#10095;</button>
+        </div>
+    </section>
+
+
+    <!--     whatshapp  contact      -->
+    <section class="whatshapp">
+
+        <!-- LEFT -->
+        <div>
+            <h1 style="font-size: 50px;">
+                High blood sugar?<br>
+                Try this diabetes-<br>
+                friendly dietÃ¢â‚¬â€for free
+            </h1>
+
+            <p class="subtext">
+                Get your diet plan on WhatsApp. No spam, guaranteed
+            </p>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right-panel">
+            <div class="form-row">
+                <input type="text" placeholder="ENTER WHATSAPP NUMBER">
+                <button id="b1">Get Free Guide</button>
+            </div>
+            <p class="note">
+                *Submit the form to receive WhatsApp updates. Unsubscribe anytime.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- our story-->
+    <section class="our-story">
+        <div class="story-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="story-text">
+                <h2>Our Story</h2>
+
+                <p>
+                    Ayurveda, the ancient Indian system of natural healing,
+                    focuses on balancing the body, mind, and spirit for overall
+                    well-being. Using herbal remedies, dietary practices,
+                    and lifestyle changes, Ayurveda helps prevent diseases and
+                    promotes holistic health. Rooted in nature, it harnesses the
+                    power of medicinal plants like Tulsi, Ashwagandha, and Amla to
+                    restore harmony and vitality. Embrace Ayurveda for a healthier,
+                    more balanced life! Ã°Å¸Å’Â±Ã¢Å“Â¨
+                </p>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="story-image">
+                <img src="assets/images/bottlerev.png" alt="Happy Customers">
+
+                <div class="image-overlay">
+
+                    <h3>20 Lakh+</h3>
+                    <p>Bottles Sold</p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Health Goals  -->
+
+    <div class="product-grid1">
+        <div class="card2" onclick="openPopup('assets/videos/video1.mp4')">
+            <h3>For Managing Sugar</h3>
+            <div class="video-box">
+                <video muted preload="metadata">
+                    <source src="assets/videos/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="btn1">Know More</div>
+        </div>
+
+        <div class="card2" onclick="openPopup('assets/videos/video2.mp4')">
+            <h3>For Joint Support</h3>
+            <div class="video-box">
+                <video muted preload="metadata">
+                    <source src="assets/videos/video2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="btn1">Know More</div>
+        </div>
+
+        <div class="card2" onclick="openPopup('assets/videos/video1.mp4')">
+            <h3>For Managing Sugar</h3>
+            <div class="video-box">
+                <video muted preload="metadata">
+                    <source src="assets/videos/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="btn1">Know More</div>
+        </div>
+
+        <div class="card2" onclick="openPopup('assets/videos/video2.mp4')">
+            <h3>For Joint Support</h3>
+            <div class="video-box">
+                <video muted preload="metadata">
+                    <source src="assets/videos/video2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="btn1">Know More</div>
+        </div>
+    </div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <video id="popupVideo" controls autoplay>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+
+    <!--   Doctor  Section   -->
+    <section class="doctor-section">
+        <div class="doctor-content">
+            <h2>Quality you can trust -<br> verified by</h2>
+            <h1 class="doctor-name">Dr. Prince Priyadershi</h1>
+            <p class="desc">Third Party Lab testing | Stringent Quality Control Standards</p>
+        </div>
+
+        <div class="doctor-image">
+            <img src="assets/images/docter.png" alt="doctor">
+        </div>
+    </section>
+
+
+
+
+    <!--      STATS  Section      -->
+    <!-- STATS SECTION -->
+    <div class="stats-section" id="stats">
+        <div class="stats-title">What We've Achieved So Far</div>
+
+        <div class="stats-grid">
+            <div class="stat">
+                <div class="stat-number" data-target="30000">0</div>
+                <div class="stat-label">LIVES TOUCHED</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-number" data-target="130">0</div>
+                <div class="stat-label">CITIES ACROSS INDIA</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-number" data-target="86">0</div>
+                <div class="stat-label">CUSTOMER SATISFACTION (%)</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-number" data-target="4.6" data-decimal="true">0</div>
+                <div class="stat-label">RATED BY 1000+ USERS</div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/918779967380" target="_blank" class="whatsapp-btn" aria-label="WhatsApp chat">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/reviewer.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+
+
+    <script>
+        // Mobile menu open/close
+        document.getElementById("mobileMenuBtn").onclick = () => {
+            document.getElementById("mobileNav").classList.toggle("hidden");
+        };
+
+        // Mobile diabetes open/close
+        document.getElementById("diabetesBtn").onclick = () => {
+            document.getElementById("diabetesMenu").classList.toggle("hidden");
+        };
+
+        // Desktop smooth menu fix
+        let desktopTimer = null;
+
+        function openDesktopMenu() {
+            clearTimeout(desktopTimer);
+            document.getElementById("desktopDiabetesMenu").classList.remove("hidden");
+        }
+
+        function closeDesktopMenu() {
+            desktopTimer = setTimeout(() => {
+                document.getElementById("desktopDiabetesMenu").classList.add("hidden");
+            }, 200);
+        }
+    </script>
+
+</body>
+
+<footer>
+    <div class="footer-container">
+
+        <!-- Logo -->
+        <div class="footer-logo">
+            <img src="assets/images/logo2.jpg" alt="VIDI Health Care Pvt Ltd">
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links">
+            <a href="pages/about-us.html">About Us</a>
+            <a href="pages/carrers.html">Careers</a>
+            <a href="pages/contact-us.html">Contact Us</a>
+            <a href="pages/cancellation-policy.html">Cancellation Policy</a>
+            <a href="pages/refund-policy.html">Refund Policy</a>
+            <a href="pages/shipping.html">shipping Policy</a>
+            <a href="pages/privacy-policy.html">Privacy Policy</a>
+            <a href="pages/term-condition.html">Terms & Conditions</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+            <strong>VIDI Health Care Pvt Ltd</strong><br>
+            74 Block, E Sector 6, Noida,<br>
+            Uttar Pradesh 201301<br>
+            Near by Bharat Plastic Private Limited,<br>
+            Email: vaidhyaamritayurveda@gmail.com<br>
+            Phone: +918779967380<br><br>
+
+            Monday Ã¢â‚¬â€œ Saturday<br>
+            10:00 AM Ã¢â‚¬â€œ 06:00 PM
+
+            <div class="footer-icons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        Ã‚© 2026 Vaidya Amrit Arydha.
+        <div class="developer">Developed by . A K</div>
+    </div>
+
+</footer>
+
+
+
+</html>
+
+
+
+
+
+
+

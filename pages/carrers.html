@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/career.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+</head>
+
+
+</head>
+
+<body class="bg-white text-white">
+
+    <!-- HEADER -->
+    <header class="border-b border-[#556B2F] bg-[#556B2F]">
+
+        <div class="px-4 py-3 lg:px-10 lg:py-5">
+
+            <!-- DESKTOP ROW -->
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
+
+                <!-- MOBILE TOP ROW -->
+                <div class="flex items-center justify-between lg:hidden">
+
+                    <button id="mobileMenuBtn" class="text-xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="flex flex-col items-center">
+                        <img src="../assets/images/logo2.jpg" class="w-12 h-12 rounded-full" alt="Logo">
+                        <span class="text-sm font-serif text-center mt-1">
+                            VIDI Health Care Pvt Ltd
+                        </span>
+                    </div>
+
+                    <button class="border px-3 py-1 rounded-full flex items-center space-x-1 text-sm">
+                        <i class="fa fa-user"></i>
+                    </button>
+                </div>
+
+                <!-- DESKTOP LOGO -->
+                <div class="hidden lg:flex flex-col items-center">
+                    <img src="../assets/images/logo2.jpg" class="w-24 h-24 rounded-full" alt="Logo">
+                    <span class="text-xl font-serif mt-1">
+                        VIDI Health Care Pvt Ltd
+                    </span>
+                </div>
+
+                <!-- SEARCH CENTER -->
+                <div class="w-full lg:w-1/2">
+                    <div class="relative">
+                        <input type="text"
+                            class="w-full rounded-full px-10 py-3 text-black bg-white border border-white"
+                            placeholder="Search for...">
+                        <i class="fa fa-search absolute left-3 top-3.5 text-gray-400"></i>
+                    </div>
+                </div>
+
+                <!-- DESKTOP ACCOUNT -->
+                <div class="hidden lg:flex">
+                    <button class="border px-5 py-2 rounded-full flex items-center space-x-2">
+                        <i class="fa fa-user"></i>
+                        <span>Account</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <div class="bg-[#556B2F]">
+
+        <nav class="border-b border-[#5b2a1f]">
+
+            <ul class="hidden lg:flex justify-center space-x-10 py-4">
+
+                <li class="relative group pb-4">
+
+                    <a href="#" class="flex items-center space-x-1 hover:text-gray-300">
+                        <span>Diabetes Support</span>
+                        <i class="fa fa-chevron-down text-xs"></i>
+                    </a>
+
+                    <div class="absolute left-0 top-full w-full h-4"></div>
+
+                    <ul class="absolute left-0 top-full opacity-0 invisible
+           group-hover:opacity-100 group-hover:visible
+           bg-[#2e120c] mt-2 w-52 rounded-lg border border-[#5b2a1f]
+           z-50 py-2 transition duration-200">
+
+                        <li><a href="diabutose-herbal-powder.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Diabutose Powder</a></li>
+                        <li><a href="gas_niwarak.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Gas Niwarak</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#3d1a12]">Ayurvedic Support</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="stamina-x-powder.html" class="hover:text-gray-300">Stamina X Powder</a></li>
+                <li><a href="gas_niwarak.html" class="hover:text-gray-300">Gas Niwarak</a></li>
+                <li><a href="vviv-customer.html" class="hover:text-gray-300">VVIP Customer</a></li>
+
+            </ul>
+
+            <!-- MOBILE NAV -->
+            <div id="mobileNav" class="hidden lg:hidden bg-[#2e120c] px-4 pb-4 space-y-3">
+
+                <button id="diabetesBtn"
+                    class="w-full flex justify-between items-center py-2 border-b border-[#5b2a1f]">
+                    <span>Diabetes Support</span>
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+
+                <ul id="diabetesMenu" class="hidden pl-4 space-y-2">
+                    <li><a href="diabutose-herbal-powder.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Diabutose Powder</a></li>
+                    <li><a href="powder-pro.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Karela Jamun Powder</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-[#3d1a12]">Ayurvedic Support</a></li>
+                </ul>
+
+                <li><a href="stamina-x-powder.html" class="hover:text-gray-300 block py-2">Stamina X Powder</a></li>
+                <li><a href="gas_niwarak.html" class="hover:text-gray-300 block py-2">Gas Niwarak</a></li>
+                <li><a href="vviv-customer.html" class="hover:text-gray-300 block py-2">VVIP Customer</a></li>
+
+            </div>
+
+        </nav>
+    </div>
+
+    <script>
+        document.getElementById('mobileMenuBtn').onclick = () =>
+            document.getElementById('mobileNav').classList.toggle('hidden');
+
+        document.getElementById('diabetesBtn').onclick = () =>
+            document.getElementById('diabetesMenu').classList.toggle('hidden');
+    </script>
+
+
+<!---
+    <body class="bg-[#FFFFFF] text-white">
+
+    -- HEADER --
+    <header class="border-b border-[#556B2F]">
+        <div style="background-color: #556B2F;">
+            <div class="flex items-center justify-between px-4 py-3 lg:px-10 lg:py-5">
+
+                -- MOBILE MENU BUTTON --
+                <button id="mobileMenuBtn" class="lg:hidden text-xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                -- LOGO --
+                <div class="flex flex-col items-center space-y-1">
+                    <img src="../assets/images/logo2.jpg" class="w-12 h-12" alt="Logo" style="border-radius: 50%; height: 150px; width: 150px;">
+                    <span class="text-xl font-serif">VIDI Health Care Pvt Ltd</span>
+                </div>
+
+                -- SEARCH (DESKTOP) --
+                <div class="hidden lg:flex flex-1 mx-10">
+                    <div class="relative flex-1">
+                        <input type="text" class="w-full rounded-full px-10 py-3 bg-[#FFFFFF] border border-[#FFFFFF]"
+                            placeholder="Search for...">
+                        <i class="fa fa-search absolute left-3 top-3.5 text-gray-300"></i>
+                    </div>
+                </div>
+
+                -- ACCOUNT --
+                <button class="border px-5 py-2 rounded-full flex items-center space-x-2">
+                    <i class="fa fa-user"></i>
+                    <span>Account</span>
+                </button>
+            </div>
+
+            -- SEARCH (MOBILE) --
+            <div class="px-4 pb-3 lg:hidden">
+                <div class="relative" style="background-color: white;">
+                    <input type="text" class="w-full rounded-full px-10 py-3 bg-[#FFFFFF] border border-[#FFFFFF]"
+                        placeholder="Search for...">
+                    <i class="fa fa-search absolute left-3 top-3.5 text-gray-300"></i>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    -- NAVIGATION --
+    <div style="background-color: #556B2F">
+        <nav class="border-b border-[#5b2a1f]">
+
+            -- DESKTOP NAV --
+            <ul class="hidden lg:flex justify-center space-x-10 py-4">
+
+                -- DESKTOP DIABETES WITH FIX --
+                <li class="relative" onmouseenter="openDesktopMenu()" onmouseleave="closeDesktopMenu()">
+
+                    <a href="#" class="flex items-center space-x-1 hover:text-gray-300">
+                        <span>Diabetes Support</span>
+                        <i class="fa fa-chevron-down text-xs"></i>
+                    </a>
+
+                    <ul id="desktopDiabetesMenu"
+                        class="absolute hidden bg-[#2e120c] mt-2 w-52 rounded-lg border border-[#5b2a1f] z-50 py-2">
+
+                        <li><a href="diabutose-herbal-powder.html"
+                                class="block px-4 py-2 hover:bg-[#3d1a12]">diacorex-powder</a></li>
+                        <li><a href="powder-pro.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Karela
+                                abd
+                                jammu-powder</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#3d1a12]">Ayurvedic Support</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="stamina-x-powder.html" class="hover:text-gray-300">Stamina X Powder</a></li>
+                <li><a href="gas_niwarak.html" class="hover:text-gray-300">gas_niwarak</a></li>
+                <li><a href="vviv-customer.html" class="hover:text-gray-300">VVIP Customer</a></li>
+            </ul>
+
+            -- MOBILE NAV --
+            <div id="mobileNav" class="hidden lg:hidden bg-[#2e120c] px-4 pb-4 space-y-3">
+
+                <button id="diabetesBtn"
+                    class="w-full flex justify-between items-center py-2 border-b border-[#5b2a1f]">
+                    <span>Diabetes Support</span>
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+
+                <ul id="diabetesMenu" class="hidden pl-4 space-y-2">
+                    <li><a href="diabutose-herbal-powder.html"
+                            class="block px-4 py-2 hover:bg-[#3d1a12]">diacorex-powder</a>
+                    </li>
+                    <li><a href="powder-pro.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Karela abd
+                            jammu-powder</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-[#3d1a12]">Ayurvedic Support</a></li>
+                </ul>
+
+                <li><a href="stamina-x-powder.html" class="hover:text-gray-300">Stamina X Powder</a></li>
+                <li><a href="gas_niwarak.html" class="hover:text-gray-300">gas_niwarak</a></li>
+                <li><a href="vviv-customer.html" class="hover:text-gray-300">VVIP Customer</a></li>
+            </div>
+
+        </nav>
+    </div>
+
+-->
+
+    <!--   Career   -->
+    <section class="career-section">
+        <h1>Your Career Growth Starts Here!</h1>
+
+        <p>
+            If youÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢re looking for a place to achieve all-around growth and and make a meaningful impact,
+            Suwasthi is the place for you. Here, every role offers opportunities to learn and excel in every
+            aspect of your career. So join our vibrant team and start your journey towards a fulfilling
+            and rewarding future.
+        </p>
+
+        <a href="#" class="btn-career">View Open Positions</a>
+    </section>
+    <!--     this is for video -->
+    <section class="video-wrapper">
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <!--    About Section   -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="team.jpg" alt="Team Image">
+            </div>
+
+            <div class="about-content">
+                <p>
+                    Founded in 2017, Suwasthi has become a trusted name in the world of Ayurvedic wellness.
+                    As a completely bootstrapped and profitable company, we proudly ship over 90,000 orders
+                    each month. Our current team of 500 passionate members is our backbone, and together, we
+                    are committed to a bold mission: To help 10 crore people manage lifestyle-related health
+                    challenges with the age-old benefits of Ayurveda by 2030.
+                </p>
+
+                <p>
+                    Joining Suwasthi means you're not just part of a company; you're part of a movement that
+                    contributes to a healthier and happier world.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--    Why   Section    -->
+    <section class="why-section">
+        <h2>Why Suwasthi?</h2>
+        <p>
+            We prioritize the well-being of our team members by creating a supportive and positive workplace so you
+            thrive both personally and professionally.
+        </p>
+    </section>
+
+
+
+
+
+
+
+    <section class="max-w-7xl mx-auto px-4 py-12">
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Card 1 -->
+    <div class="border rounded-xl p-8 text-center">
+      <div class="text-4xl mb-4">ÃƒÂ°Ã…Â¸Ã¢â‚¬â„¢Ã‚Â°</div>
+      <h3 class="text-xl font-semibold mb-3">Competitive Salaries</h3>
+      <p class="text-gray-600">We ensure our team members are well compensated with a deserving package that reflects their worth</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="border rounded-xl p-8 text-center">
+      <div class="text-4xl mb-4">ÃƒÂ°Ã…Â¸Ã‚ÂÃ¢â‚¬Â </div>
+      <h3 class="text-xl font-semibold mb-3">Incentive-Based Rewards</h3>
+      <p class="text-gray-600">We have an incentive system that rewards performance-based bonuses for all outstanding work done</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="border rounded-xl p-8 text-center">
+      <div class="text-4xl mb-4">ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â½ÃƒÂ¯Ã‚Â¸Ã‚Â</div>
+      <h3 class="text-xl font-semibold mb-3">Daily Delicious Lunch</h3>
+      <p class="text-gray-600">We provide free delicious, nutritious meals daily for all team members to keep them healthy and focused</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="border rounded-xl p-8 text-center">
+      <div class="text-4xl mb-4">ÃƒÂ°Ã…Â¸Ã…â€™Ã¢â‚¬Å¡</div>
+      <h3 class="text-xl font-semibold mb-3">Paid Time Off</h3>
+      <p class="text-gray-600">We believe in work-life balance, hence we offer flexible paid leaves so you can rest and enjoy your personal time</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="border rounded-xl p-8 text-center">
+      <div class="text-4xl mb-4">ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â</div>
+      <h3 class="text-xl font-semibold mb-3">Convenient Location</h3>
+      <p class="text-gray-600">Our office is located in GM IT Park, just a short walk from the metro making your commute easier</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="border rounded-xl p-8 text-center">
+      <div class="text-4xl mb-4">ÃƒÂ°Ã…Â¸Ã…Â½Ã¢â‚¬Â°</div>
+      <h3 class="text-xl font-semibold mb-3">Success Celebrations</h3>
+      <p class="text-gray-600">Every quarter, we arrange events and celebrations to appreciate our team's efforts and achievements</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--   Spotlight  -->
+    <section class="spotlight-section">
+        <h2>Employee Spotlights</h2>
+
+        <div class="spotlight-grid">
+
+            <!-- CARD 1 -->
+            <div class="spotlight-card">
+                <div class="spot-img">
+                    <img src="person1.jpg" alt="">
+                </div>
+                <h3>MIS</h3>
+                <span class="role">Specialist</span>
+                <div class="stars">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</div>
+                <p>Maintaining information systems, analyzing data for reports, troubleshooting, and ensuring compliance
+                    with regulations.</p>
+                <div class="author">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Akash Singh</div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="spotlight-card">
+                <div class="spot-img">
+                    <img src="person2.jpg" alt="">
+                </div>
+                <h3>Technical</h3>
+                <span class="role">Lead</span>
+                <div class="stars">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</div>
+                <p>Leading technical solutions, collaborating with stakeholders, and overseeing project execution.</p>
+                <div class="author">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Shubham Sharma</div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="spotlight-card">
+                <div class="spot-img">
+                    <img src="person3.jpg" alt="">
+                </div>
+                <h3>IT</h3>
+                <span class="role">Manager</span>
+                <div class="stars">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</div>
+                <p>Managing IT systems, improving operations, ensuring uptime and strategic planning.</p>
+                <div class="author">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Deepak Tiwari</div>
+            </div>
+
+            <!-- ADD 6 MORE BELOW SAME FORMAT -->
+            <!-- CARD 1 -->
+            <div class="spotlight-card">
+                <div class="spot-img">
+                    <img src="person1.jpg" alt="">
+                </div>
+                <h3>MIS</h3>
+                <span class="role">Specialist</span>
+                <div class="stars">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</div>
+                <p>Maintaining information systems, analyzing data for reports, troubleshooting, and ensuring compliance
+                    with regulations.</p>
+                <div class="author">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Akash Singh</div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="spotlight-card">
+                <div class="spot-img">
+                    <img src="person2.jpg" alt="">
+                </div>
+                <h3>Technical</h3>
+                <span class="role">Lead</span>
+                <div class="stars">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</div>
+                <p>Leading technical solutions, collaborating with stakeholders, and overseeing project execution.</p>
+                <div class="author">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Shubham Sharma</div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="spotlight-card">
+                <div class="spot-img">
+                    <img src="person3.jpg" alt="">
+                </div>
+                <h3>IT</h3>
+                <span class="role">Manager</span>
+                <div class="stars">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</div>
+                <p>Managing IT systems, improving operations, ensuring uptime and strategic planning.</p>
+                <div class="author">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Deepak Tiwari</div>
+            </div>
+
+        </div>
+    </section>
+    <section class="sitemap-section">
+
+        <h3>Sitemap</h3>
+        <div class="links">
+            <a href="../index.html">Home</a>
+        </div>
+
+    </section>
+
+<script src="../assets/js/header.js"></script>
+
+
+
+
+    <a href="https://wa.me/918779967380" target="_blank" class="whatsapp-btn" aria-label="WhatsApp chat">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a></body>
+
+<!--  Footer  -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <img src="../assets/images/logo2.jpg" alt="Suwasthi Logo">
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <a href="about-us.html">About Us</a>
+            <a href="carrers.html">Careers</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="cancellation-policy.html">Cancellation Policy</a>
+            <a href="refund-policy.html">Refund Policy</a>
+            <a href="shipping.html">shipping Policy</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="term-condition.html">Terms & Conditions</a>
+        </div>
+
+        <!-- India Address -->
+        <div class="footer-address">
+            <h4>VIDI Health Care Pvt Ltd</h4>
+            <p>74 Block, E Sector 6, Noida,<br>
+                Uttar Pradesh 201301<br>
+                Near by Bharat Plastic Private Limited,<br>
+                Email : vaidhyaamritayurveda@gmail.com<br>
+                Phone : +918779967380
+            </p>
+            <p>Monday ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Saturday<br>
+                10:00 AM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 06:00 PM</p>
+
+            <div class="social-icons">
+                <!-- Phone -->
+                <a href="tel:+918779967380" aria-label="Call Us">
+                    <i class="fas fa-phone"></i>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:vaidhyaamritayurveda@gmail.com" aria-label="Email Us">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/suwasthiindia" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/suwasthiindia" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <a href="/index.html" style="color: white;">Ãƒâ€šÂ© 2026 VIDI Health Care Pvt Ltd.</a>
+        <h6 style="text-align: right;
+    margin: 10px auto 0;
+    color: rgb(26,255,0);
+    display:block;">Developed by : A K</h6>
+    </div>
+</footer>
+
+</html>
+
+
+
+
+
+
+
