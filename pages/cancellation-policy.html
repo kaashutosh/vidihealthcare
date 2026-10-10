@@ -33,7 +33,7 @@
                     <div class="flex flex-col items-center">
                         <img src="../assets/images/logo2.jpg" class="w-12 h-12 rounded-full" alt="Logo">
                         <span class="text-sm font-serif text-center mt-1">
-                            VIDI Health Care Pvt Ltd
+                            Divi Health Care Pvt Ltd
                         </span>
                     </div>
 
@@ -46,7 +46,7 @@
                 <div class="hidden lg:flex flex-col items-center">
                     <img src="../assets/images/logo2.jpg" class="w-24 h-24 rounded-full" alt="Logo">
                     <span class="text-xl font-serif mt-1">
-                        VIDI Health Care Pvt Ltd
+                        Divi Health Care Pvt Ltd
                     </span>
                 </div>
 
@@ -80,54 +80,20 @@
 
             <ul class="hidden lg:flex justify-center space-x-10 py-4">
 
-                <li class="relative group pb-4">
-
-                    <a href="#" class="flex items-center space-x-1 hover:text-gray-300">
-                        <span>Diabetes Support</span>
-                        <i class="fa fa-chevron-down text-xs"></i>
-                    </a>
-
-                    <div class="absolute left-0 top-full w-full h-4"></div>
-
-                    <ul class="absolute left-0 top-full opacity-0 invisible
-           group-hover:opacity-100 group-hover:visible
-           bg-[#2e120c] mt-2 w-52 rounded-lg border border-[#5b2a1f]
-           z-50 py-2 transition duration-200">
-
-                        <li><a href="diabutose-herbal-powder.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Diabutose
-                                Powder</a></li>
-                        <li><a href="gas_niwarak.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Gas Niwarak</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-[#3d1a12]">Ayurvedic Support</a></li>
-
-                    </ul>
-                </li>
-
+                <li><a href="madhu-vinashak.html" class="hover:text-gray-300">Madhu Vinashak</a></li>
                 <li><a href="stamina-x-powder.html" class="hover:text-gray-300">Stamina X Powder</a></li>
-                <li><a href="gas_niwarak.html" class="hover:text-gray-300">Gas Niwarak</a></li>
-                <li><a href="vviv-customer.html" class="hover:text-gray-300">VVIP Customer</a></li>
+                <li><a href="powder-pro.html" class="hover:text-gray-300">Powder Pro</a></li>
+                <li><a href="diabetic-cure.html" class="hover:text-gray-300">Diabetic Cure</a></li>
 
             </ul>
 
             <!-- MOBILE NAV -->
             <div id="mobileNav" class="hidden lg:hidden bg-[#2e120c] px-4 pb-4 space-y-3">
 
-                <button id="diabetesBtn"
-                    class="w-full flex justify-between items-center py-2 border-b border-[#5b2a1f]">
-                    <span>Diabetes Support</span>
-                    <i class="fa fa-chevron-down"></i>
-                </button>
-
-                <ul id="diabetesMenu" class="hidden pl-4 space-y-2">
-                    <li><a href="diabutose-herbal-powder.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Diabutose
-                            Powder</a></li>
-                    <li><a href="powder-pro.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Karela Jamun
-                            Powder</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-[#3d1a12]">Ayurvedic Support</a></li>
-                </ul>
-
+                <li><a href="madhu-vinashak.html" class="hover:text-gray-300">Madhu Vinashak</a></li>
                 <li><a href="stamina-x-powder.html" class="hover:text-gray-300 block py-2">Stamina X Powder</a></li>
-                <li><a href="gas_niwarak.html" class="hover:text-gray-300 block py-2">Gas Niwarak</a></li>
-                <li><a href="vviv-customer.html" class="hover:text-gray-300 block py-2">VVIP Customer</a></li>
+                <li><a href="powder-pro.html" class="hover:text-gray-300">Powder Pro</a></li>
+                <li><a href="diabetic-cure.html" class="hover:text-gray-300">Diabetic Cure</a></li>
 
             </div>
 
@@ -138,114 +104,8 @@
         document.getElementById('mobileMenuBtn').onclick = () =>
             document.getElementById('mobileNav').classList.toggle('hidden');
 
-        document.getElementById('diabetesBtn').onclick = () =>
-            document.getElementById('diabetesMenu').classList.toggle('hidden');
-    </script>
-    <!---
-<body class="bg-[#FFFFFF] text-white">
-
-    -- HEADER --
-    <header class="border-b border-[#556B2F]">
-        <div style="background-color: #556B2F;">
-            <div class="flex items-center justify-between px-4 py-3 lg:px-10 lg:py-5">
-
-                -- MOBILE MENU BUTTON --
-                <button id="mobileMenuBtn" class="lg:hidden text-xl">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-
-                -- LOGO --
-                <div class="flex flex-col items-center space-y-1">
-                    <img src="../assets/images/logo2.jpg" class="w-12 h-12" alt="Logo" style="border-radius: 50%;">
-                    <span class="text-xl font-serif">VIDI Health Care Pvt Ltd</span>
-                </div>
-
-                -- SEARCH (DESKTOP) --
-                <div class="hidden lg:flex flex-1 mx-10">
-                    <div class="relative flex-1">
-                        <input type="text" class="w-full rounded-full px-10 py-3 bg-[#FFFFFF] border border-[#FFFFFF]"
-                            placeholder="Search for...">
-                        <i class="fa fa-search absolute left-3 top-3.5 text-gray-300"></i>
-                    </div>
-                </div>
-
-                -- ACCOUNT --
-                <button class="border px-5 py-2 rounded-full flex items-center space-x-2">
-                    <i class="fa fa-user"></i>
-                    <span>Account</span>
-                </button>
-            </div>
-
-            -- SEARCH (MOBILE) --
-            <div class="px-4 pb-3 lg:hidden">
-                <div class="relative" style="background-color: white;">
-                    <input type="text" class="w-full rounded-full px-10 py-3 bg-[#FFFFFF] border border-[#FFFFFF]"
-                        placeholder="Search for...">
-                    <i class="fa fa-search absolute left-3 top-3.5 text-gray-300"></i>
-                </div>
-            </div>
-        </div>
-
-    </header>
-
-    -- NAVIGATION --
-    <div style="background-color: #556B2F">
-        <nav class="border-b border-[#5b2a1f]">
-
-            -- DESKTOP NAV --
-            <ul class="hidden lg:flex justify-center space-x-10 py-4">
-
-                -- DESKTOP DIABETES WITH FIX --
-                <li class="relative" onmouseenter="openDesktopMenu()" onmouseleave="closeDesktopMenu()">
-
-                    <a href="#" class="flex items-center space-x-1 hover:text-gray-300">
-                        <span>Diabetes Support</span>
-                        <i class="fa fa-chevron-down text-xs"></i>
-                    </a>
-
-                    <ul id="desktopDiabetesMenu"
-                        class="absolute hidden bg-[#2e120c] mt-2 w-52 rounded-lg border border-[#5b2a1f] z-50 py-2">
-
-                        <li><a href="diabutose-herbal-powder.html"
-                                class="block px-4 py-2 hover:bg-[#3d1a12]">diacorex-powder</a></li>
-                        <li><a href="powder-pro.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Karela
-                                abd
-                                jammu-powder</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-[#3d1a12]">Ayurvedic Support</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="stamina-x-powder.html" class="hover:text-gray-300">Stamina X Powder</a></li>
-                <li><a href="gas_niwarak.html" class="hover:text-gray-300">gas_niwarak</a></li>
-                <li><a href="vviv-customer.html" class="hover:text-gray-300">VVIP Customer</a></li>
-            </ul>
-
-            -- MOBILE NAV --
-            <div id="mobileNav" class="hidden lg:hidden bg-[#2e120c] px-4 pb-4 space-y-3">
-
-                <button id="diabetesBtn"
-                    class="w-full flex justify-between items-center py-2 border-b border-[#5b2a1f]">
-                    <span>Diabetes Support</span>
-                    <i class="fa fa-chevron-down"></i>
-                </button>
-
-                <ul id="diabetesMenu" class="hidden pl-4 space-y-2">
-                    <li><a href="diabutose-herbal-powder.html"
-                            class="block px-4 py-2 hover:bg-[#3d1a12]">diacorex-powder</a>
-                    </li>
-                    <li><a href="powder-pro.html" class="block px-4 py-2 hover:bg-[#3d1a12]">Karela abd
-                            jammu-powder</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-[#3d1a12]">Ayurvedic Support</a></li>
-                </ul>
-
-                <li><a href="stamina-x-powder.html" class="hover:text-gray-300">Stamina X Powder</a></li>
-                <li><a href="gas_niwarak.html" class="hover:text-gray-300">gas_niwarak</a></li>
-                <li><a href="vviv-customer.html" class="hover:text-gray-300">VVIP Customer</a></li>
-            </div>
-
-        </nav>
-    </div>
--->
+        </script>
+    
     <!--  Privacy Policy  -->
     <section class="policy-section">
 
@@ -320,7 +180,6 @@
         <!-- Quick Links -->
         <div class="footer-links">
             <a href="about-us.html">About Us</a>
-            <a href="carrers.html">Careers</a>
             <a href="contact-us.html">Contact Us</a>
             <a href="cancellation-policy.html">Cancellation Policy</a>
             <a href="refund-policy.html">Refund Policy</a>
@@ -331,15 +190,15 @@
 
         <!-- India Address -->
         <div class="footer-address">
-            <h4>VIDI Health Care Pvt Ltd</h4>
+            <h4>Divi Health Care Pvt Ltd</h4>
             <p>74 Block, E Sector 6, Noida,<br>
                 Uttar Pradesh 201301<br>
                 Near by Bharat Plastic Private Limited,<br>
                 Email : vaidhyaamritayurveda@gmail.com<br>
                 Phone : +918779967380
             </p>
-            <p>Monday ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Saturday<br>
-                10:00 AM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 06:00 PM</p>
+            <p>Monday -- Saturday<br>
+                10:00 AM -- 06:00 PM</p>
 
             <div class="social-icons">
                 <!-- Phone -->
@@ -369,7 +228,7 @@
 
     <!-- Copyright -->
     <div class="footer-bottom">
-        <a href="/index.html" style="color: white;">Ãƒâ€šÂ© 2026 VIDI Health Care Pvt Ltd.</a>
+        <a href="/index.html" style="color: white;"> © 2026 VIDI Health Care Pvt Ltd.</a>
         <h6 style="text-align: right;
     margin: 10px auto 0;
     color: rgb(26,255,0);
