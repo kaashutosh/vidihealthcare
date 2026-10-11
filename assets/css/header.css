@@ -1,0 +1,44 @@
+/* HEADER + NAVIGATION ONLY
+   Extracted from the original stylesheet. Keep the site's existing colors. */
+
+/* Header / top bar */
+header {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+header,
+header a,
+header button,
+body > div.bg-\[\#556B2F\] a {
+    color: #fffdf7;
+}
+
+header input {
+    color: #26332b;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#mobileNav {
+    background-color: #1f392a;
+}
+
+/* Header and navigation backgrounds */
+header,
+body > div.bg-\[\#556B2F\],
+header.bg-\[\#556B2F\] {
+    background-color: #294b36 !important;
+}
+
+/* Keep links and buttons readable */
+header a,
+header button,
+body > div.bg-\[\#556B2F\] a {
+    color: #fffdf7;
+}
+
+/* Responsive header text/input sizing */
+@media (max-width: 600px) {
+    header input {
+        font-size: 16px;
+    }
+}
